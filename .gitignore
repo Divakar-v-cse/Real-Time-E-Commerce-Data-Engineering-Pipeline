@@ -1,0 +1,133 @@
+# ===========================================================================
+# Divakar — Real-Time E-Commerce Data Engineering Pipeline
+# ===========================================================================
+# Excluded by category:
+#   * installed dependencies (node, python, vendored wheels)
+#   * local databases and generated data
+#   * environment files, credentials and secrets
+#   * build output, caches and temporary files
+# ===========================================================================
+
+# ---------------------------------------------------------------------------
+# Node / frontend
+# ---------------------------------------------------------------------------
+node_modules/
+frontend/node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+frontend/dist/
+frontend/.vite/
+node-compile-cache/
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+sdist/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-*/
+pip-wheel-metadata/
+
+# Virtual environments and local install targets
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+vendor/
+
+# ---------------------------------------------------------------------------
+# Environment variables, credentials and secrets
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.secrets/
+credentials.json
+service-account*.json
+.netrc
+.aws/
+.ssh/
+
+# ---------------------------------------------------------------------------
+# Local database, runtime state and logs
+# ---------------------------------------------------------------------------
+.pgdata/
+.state/
+logs/
+*.log
+*.dump
+*.backup
+*.sql.gz
+*.db
+*.sqlite
+*.sqlite3
+
+# ---------------------------------------------------------------------------
+# Generated data lake, event-broker segments and raw extracts
+# (regenerate with: python -m pipeline.generator.generate_historical)
+# ---------------------------------------------------------------------------
+data/raw/
+data/lake/
+data/broker/
+
+# ---------------------------------------------------------------------------
+# Test / type-check / lint caches
+# ---------------------------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# ---------------------------------------------------------------------------
+# Temporary files
+# ---------------------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.swp
+*~
+_avast_/
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---------------------------------------------------------------------------
+# Editors / IDEs
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.iml
